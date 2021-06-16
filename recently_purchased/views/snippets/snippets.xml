@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--  This forms a block in dynamic block  , t-snippet contains id of the template which needs to be rendered -->
+    <template id="recently_bought_products" inherit_id="website_sale.product" active="False"
+              customize_show="True" name="Frequently Bought Products" priority="17">
+        <xpath expr="//div[@t-field='product.website_description']" position="after">
+            <t t-snippet-call="recently_purchased.s_prev_purchased_products"/>
+        </xpath>
+    </template>
+
+    <template id="prev_purchased_products" inherit_id="website.snippets" name="Frequently Bought Products">
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="recently_purchased.s_prev_purchased_products"
+               t-thumbnail="/website_sale/static/src/img/snippets_thumbs/s_products_recently_viewed.svg"/>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_s_previously_purchased_product" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript"
+            src="/recently_purchased/static/src/snippets/previous_purchased_product/000.js"/>
+        </xpath>
+    </template>
+</odoo>

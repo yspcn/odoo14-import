@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<record forcecreate="True" id="decimal_kilogram" model="decimal.precision">
+            <field name="name">Kilograms per unit (eg 0.5 for 500g)</field>
+            <field name="digits">3</field>
+    </record>
+
+</odoo>
