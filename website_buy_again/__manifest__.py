@@ -17,7 +17,7 @@
   "name"                 :  "Website Buy Again",
   "summary"              :  """With Odoo Website Buy Again the customers can easily buy the previously bought products in a click. The module adds a tab BUY AGAIN on the Odoo website. The tab has list of previously bought products.""",
   "category"             :  "Website",
-  "version"              :  "1.0",
+  "version"              :  "1.1",
   "sequence"             :  1,
   "author"               :  "Webkul Software Pvt. Ltd.",
   "license"              :  "Other proprietary",

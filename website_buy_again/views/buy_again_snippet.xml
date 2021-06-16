@@ -18,7 +18,7 @@
                         <t t-set="prod_size" t-value="len(products)-1"/>
                         <div class="carousel-inner" id="buy_again_prod">
                         <t t-set="index" t-value="prod_size"/>
-                        <t t-set="prod_row" t-value="6"/>
+                        <t t-set="prod_row" t-value="index"/>
                             <div class="carousel-item active">
                                 <div class="row">
                                 <t t-foreach='prod_row' t-as="p_row">
